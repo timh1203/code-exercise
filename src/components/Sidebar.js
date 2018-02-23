@@ -3,12 +3,12 @@ import React from 'react'
 import '../styles/Sidebar.css'
 import SidebarItem from './SidebarItem'
 
-const Sidebar = () => {
+const Sidebar = (props) => {
   return (
     <div className="Sidebar">
-        <SidebarItem />
-        <SidebarItem />
-        <SidebarItem />
+        <SidebarItem {...props} />
+        <SidebarItem {...props}/>
+        <SidebarItem {...props}/>
     </div>
   )
 }

@@ -1,0 +1,18 @@
+.Main > * {
+  display: block;
+  font-size: 1.5em;
+  margin: 0 auto;
+}
+
+.MainInputs > * {
+  display: inline-block;
+}
+
+.MainInputs input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  width: 25%;
+  font-size: 1.25em;
+  text-align: center;
+}

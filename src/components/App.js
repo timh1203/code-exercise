@@ -13,11 +13,16 @@ class App extends Component {
     }
   }
   
+  changeTheme = (e, color) => {
+    e.preventDefault()
+    this.setState({ theme: color })
+  }
+
   render() {
     return (
       <div className="App">
-      <Navbar {...this.state} />
-      <Sidebar />
+      <Navbar {...this.state} changeTheme={this.changeTheme} />
+      <Sidebar {...this.state} />
       <Main />
       </div>
     )

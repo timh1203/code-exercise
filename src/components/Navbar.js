@@ -13,14 +13,14 @@ const Navbar = (props) => {
       {props.theme === "green" ? <img className="myappGreen" src={myappGreen} alt="My App Green"/> : null}
       
       {props.theme === "green" ? (<div className="buttonsGreen">
-          <button className="green">Green</button>
-          <button className="red">Red</button>
+          <button className="green" onClick={(e) => props.changeTheme(e, "green")} >Green</button>
+          <button className="red" onClick={(e) => props.changeTheme(e, "red")} >Red</button>
         </div>)
         : null}
       
       {props.theme === "red" ? <div className="buttonsRed">
-          <button className="green">Green</button>
-          <button className="red">Red</button>
+          <button className="green" onClick={(e) => props.changeTheme(e, "green")}>Green</button>
+          <button className="red" onClick={(e) => props.changeTheme(e, "red")}>Red</button>
         </div>
         : null}
 

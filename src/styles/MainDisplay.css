@@ -1,0 +1,9 @@
+.MainDisplay {
+  background: #f8f8f8;
+  width: 65%;
+  margin-right: 8%;
+  height: 90%;
+  box-shadow: 1px 1px 5px gray;
+  float: right;
+  min-height: 100vh;
+}
