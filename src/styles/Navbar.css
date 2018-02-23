@@ -1,0 +1,72 @@
+/* lightgray: #f8f8f8; 
+darkgray: #4d4d4d;
+green: #4caf50;
+red: #df2e00;  */
+
+.Navbar {
+  background: #f8f8f8;
+  box-shadow: 1px 1px 5px gray;
+}
+
+.innerNavbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+}
+
+.Navbar .myappRed,
+.Navbar .myappGreen {
+  vertical-align: middle;
+  height: 3em;
+  margin-left: 3%;
+}
+
+.Navbar .buttonsGreen > * {
+  display: inline-block;
+  background: none;
+  outline: none;
+  border: 2px solid #4caf50;
+  margin: 0 auto;
+  width: 16em;
+  height: 2em;
+  font-size: 1.5em;
+}
+
+.Navbar .buttonsRed > * {
+  display: inline-block;
+  background: none;
+  outline: none;
+  border: 2px solid #df2e00;
+  margin: 0 auto;
+  width: 16em;
+  height: 2em;
+  font-size: 1.5em;
+}
+
+.Navbar .buttonsGreen .green {
+  background: #4caf50;
+  color: white;
+}
+
+.Navbar .buttonsGreen .red {
+  color: #4caf50;
+  background: white;
+}
+
+.Navbar .buttonsRed .green {
+  color: #df2e00;
+  background: white;
+}
+
+.Navbar .buttonsRed .red {
+  background: #df2e00;
+  color: white;
+}
+
+.Navbar .face {
+  margin: 0.5%;
+  border-radius: 50%;
+  margin-right: 3%;
+}

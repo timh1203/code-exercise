@@ -2,15 +2,30 @@ import React from 'react'
 
 import '../styles/Navbar.css'
 import myappRed from '../assets/myappRed.png'
+import myappGreen from '../assets/myappGreen.png'
 import face from '../assets/face.jpg'
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <div className="Navbar">
-      <img src={myappRed} alt="My App Red"/>
-      <button>Green</button>
-      <button>Red</button>
-      <img src={face} alt="Face"/>
+      <div className="innerNavbar">
+      {props.theme === "red" ? <img className="myappRed" src={myappRed} alt="My App Red"/> : null}
+      {props.theme === "green" ? <img className="myappGreen" src={myappGreen} alt="My App Green"/> : null}
+      
+      {props.theme === "green" ? (<div className="buttonsGreen">
+          <button className="green">Green</button>
+          <button className="red">Red</button>
+        </div>)
+        : null}
+      
+      {props.theme === "red" ? <div className="buttonsRed">
+          <button className="green">Green</button>
+          <button className="red">Red</button>
+        </div>
+        : null}
+
+      <img className="face" src={face} alt="Face"/>
+      </div>
     </div>
   )
 }

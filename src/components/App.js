@@ -6,10 +6,17 @@ import Sidebar from './Sidebar'
 import Main from './Main'
 
 class App extends Component {
+  constructor() {
+    super()
+    this.state = {
+      theme: "green",
+    }
+  }
+  
   render() {
     return (
       <div className="App">
-      <Navbar />
+      <Navbar {...this.state} />
       <Sidebar />
       <Main />
       </div>
