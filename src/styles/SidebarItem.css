@@ -1,0 +1,13 @@
+.SidebarItem {
+  padding: 5% 0;
+}
+.innerSidebarItem {
+  display: flex;
+  justify-content: space-around;
+  flex: 1 1 100%;
+  margin: 0 auto;
+}
+
+.SidebarItem_description > * {
+  margin: 0;
+}
