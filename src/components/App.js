@@ -10,6 +10,8 @@ class App extends Component {
     super()
     this.state = {
       theme: "green",
+      columns: 5,
+      height: 900,
     }
   }
   
@@ -17,13 +19,25 @@ class App extends Component {
     e.preventDefault()
     this.setState({ theme: color })
   }
+  
+  changeColumns = (e) => {
+    e.preventDefault()
+    const value = Number(e.target.value)
+    this.setState({ columns: value })
+  }
+  
+  changeHeight = (e) => {
+    e.preventDefault()
+    const value = Number(e.target.value)
+    this.setState({ height: value })
+  }
 
   render() {
     return (
       <div className="App">
-      <Navbar {...this.state} changeTheme={this.changeTheme} />
-      <Sidebar {...this.state} />
-      <Main />
+        <Navbar {...this.state} changeTheme={this.changeTheme} />
+        <Sidebar {...this.state} />
+        <Main {...this.state} changeColumns={this.changeColumns} changeHeight={this.changeHeight}/>
       </div>
     )
   }
